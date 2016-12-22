@@ -29,14 +29,14 @@
 	border: 1px solid $color_gray;
 	flex-direction: column;
 	
-	@media screen and (min-width:$viewport_m + 1) {
+	@media screen and (min-width:$viewport_m - 1) {
 		flex-direction: row;
 	}
 	
 	.card__edit {
 		width: 100%;
 		
-		@media screen and (min-width:$viewport_m + 1) {
+		@media screen and (min-width:$viewport_m - 1) {
 			width: 50%;
 			&.front {
 				border-right: 1px solid $color_gray;
@@ -54,44 +54,80 @@
 }
 
 .card-design__front {
-	width: 300px;
+	width: 100%;
+	height: 189px;
+	max-width: 330px;
 	margin: 5% auto;
-	padding: 15px;
 	text-align: center;
 	border: 1px solid $color_gray;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	position: relative;
 	
-	.logo {
-		width: 36%;
+	.img-responsive {
+		height: 189px;
 	}
+}
 	
-	.input {
-		border: none;
-		text-align: center;
-		height: 30px;
-		margin: 10px 0;
-		font-weight: bold;
-		font-size: 20px;
-		-webkit-appearance: none;
-   		-moz-appearance: none;
-   		appearance: none;
-		background: none;
-	}
+	.card-content {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: rgba(0,0,0,0.2);
+		padding: 15px;
+		color: #fff;
 	
-	.title {
-		font-size: 13px;
-		border-bottom: 2px solid #ddd;
-    	border-top: 2px solid #ddd;
-    	padding: 2px 12px;
-		margin-bottom: 15px;
-	}
+		.logo {
+			width: 36%;
+		}
 	
-	.phone, .email {
-		font-size: 12px;
-		font-style: italic;
-		line-height: 1.2
-	}
+		.input {
+			border: none;
+			text-align: center;
+			height: 30px;
+			margin: 10px 0;
+			font-weight: bold;
+			font-size: 20px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: none;
+			color: #fff;
+		}
+	
+		.title {
+			font-size: 13px;
+			border-bottom: 2px solid #ddd;
+			border-top: 2px solid #ddd;
+			padding: 2px 12px;
+			margin-bottom: 15px;
+		}
+		
+		.company {
+			font-weight: bold;
+		}
+	
+		.phone, .email,.address {
+			font-size: 12px;
+			font-style: italic;
+			line-height: 1.2
+		}	
+}
+.select-pattern {    
+	position: absolute;
+	color: $color_link;
+	top: 13px;
+	z-index: 999;
+	width: 50%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-family: "Playfair Display", serif;
+	font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
 }
