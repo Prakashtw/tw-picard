@@ -22,3 +22,76 @@
 .img-responsive {
 	width: 100%;
 }
+
+.card {
+	display: flex;
+	margin-top: 40px;
+	border: 1px solid $color_gray;
+	flex-direction: column;
+	
+	@media screen and (min-width:$viewport_m + 1) {
+		flex-direction: row;
+	}
+	
+	.card__edit {
+		width: 100%;
+		
+		@media screen and (min-width:$viewport_m + 1) {
+			width: 50%;
+			&.front {
+				border-right: 1px solid $color_gray;
+			}
+		}
+	}
+	
+	.card__title {
+		background: $color_primary;
+		text-align: center;
+		padding: 10px;
+		font-weight: bold;
+		border-bottom: 1px solid $color_gray;
+	}
+}
+
+.card-design__front {
+	width: 300px;
+	margin: 5% auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid $color_gray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	.logo {
+		width: 36%;
+	}
+	
+	.input {
+		border: none;
+		text-align: center;
+		height: 30px;
+		margin: 10px 0;
+		font-weight: bold;
+		font-size: 20px;
+		-webkit-appearance: none;
+   		-moz-appearance: none;
+   		appearance: none;
+		background: none;
+	}
+	
+	.title {
+		font-size: 13px;
+		border-bottom: 2px solid #ddd;
+    	border-top: 2px solid #ddd;
+    	padding: 2px 12px;
+		margin-bottom: 15px;
+	}
+	
+	.phone, .email {
+		font-size: 12px;
+		font-style: italic;
+		line-height: 1.2
+	}
+}

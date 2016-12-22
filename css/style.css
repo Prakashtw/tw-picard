@@ -630,7 +630,7 @@ button:focus {
   font-size: 2em; }
 
 .content__item {
-  padding: 80px 20px 40px; }
+  padding: 65px 20px 40px; }
 
 .content .close-button {
   padding: 10px 20px; }
@@ -670,5 +670,61 @@ button:focus {
 
 .img-responsive {
   width: 100%; }
+
+.card {
+  display: flex;
+  margin-top: 40px;
+  border: 1px solid #dddddd;
+  flex-direction: column; }
+  @media screen and (min-width: 770px) {
+    .card {
+      flex-direction: row; } }
+  .card .card__edit {
+    width: 100%; }
+    @media screen and (min-width: 770px) {
+      .card .card__edit {
+        width: 50%; }
+        .card .card__edit.front {
+          border-right: 1px solid #dddddd; } }
+  .card .card__title {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd; }
+
+.card-design__front {
+  width: 300px;
+  margin: 5% auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .card-design__front .logo {
+    width: 36%; }
+  .card-design__front .input {
+    border: none;
+    text-align: center;
+    height: 30px;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none; }
+  .card-design__front .title {
+    font-size: 13px;
+    border-bottom: 2px solid #ddd;
+    border-top: 2px solid #ddd;
+    padding: 2px 12px;
+    margin-bottom: 15px; }
+  .card-design__front .phone, .card-design__front .email {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.2; }
 
 /*# sourceMappingURL=style.css.map */
