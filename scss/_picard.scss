@@ -83,27 +83,46 @@
 		.logo {
 			width: 36%;
 		}
-	
-		.input {
+		
+		input[type="text"] {
+			width: 100%;
 			border: none;
 			text-align: center;
-			height: 30px;
-			margin: 10px 0;
-			font-weight: bold;
-			font-size: 20px;
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
 			background: none;
 			color: #fff;
+			min-height: 20px;
+		}
+		
+		::-webkit-input-placeholder {
+			color: #fff;
+		}
+		::-moz-input-placeholder {
+			color: #fff;
+		}
+		::-ms-input-placeholder {
+			color: #fff;
+		}
+		:-moz-input-placeholder {
+			color: #fff;
+		}
+		.name {
+			height: 30px;
+			margin: 10px 0;
+			font-weight: 800;
+			font-size: 20px;
+			text-transform: uppercase;
 		}
 	
 		.title {
-			font-size: 13px;
+			font-size: 14px;
 			border-bottom: 2px solid #ddd;
 			border-top: 2px solid #ddd;
 			padding: 2px 12px;
 			margin-bottom: 15px;
+			font-style: italic;
 		}
 		
 		.company {
@@ -111,9 +130,11 @@
 		}
 	
 		.phone, .email,.address {
-			font-size: 12px;
+			font-size: 13px;
 			font-style: italic;
-			line-height: 1.2
+			line-height: 1.2;
+			border:none;
+			color: #fff;
 		}	
 }
 .select-pattern {    
@@ -130,4 +151,23 @@
 	font-weight: bold;
     font-style: italic;
     font-size: 18px;
+}
+
+.pattern-item {
+	.color,img {
+		height: 80px;
+		@media screen and (min-width:$viewport_m - 1) {
+			height: 110px;
+			}
+	}
+	
+	.red {
+		background: red;
+	}
+	.green {
+		background: green;
+	}
+	.yellow {
+		background: yellow;
+	}
 }

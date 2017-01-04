@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700,900|Raleway:500|Martel+Sans:400,700);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800");
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -22,7 +22,7 @@ body {
   color: #7b7b7b;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Martel Sans", Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -66,7 +66,7 @@ button:focus {
     margin: 0.75em 0;
     font-size: 20px;
     line-height: 1;
-    font-family: "Playfair Display", serif; }
+    font-family: "Open Sans", sans-serif; }
   .sidebar a {
     display: block;
     padding: 5px;
@@ -219,7 +219,7 @@ button:focus {
 .title {
   margin: 0;
   font-size: 1.875em;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center; }
 
 .title--preview {
@@ -271,7 +271,7 @@ button:focus {
   position: relative;
   font-size: 0.95em;
   font-style: italic;
-  font-family: "Playfair Display", serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   display: block; }
 
@@ -634,30 +634,45 @@ button:focus {
   color: #fff; }
   .card-content .logo {
     width: 36%; }
-  .card-content .input {
+  .card-content input[type="text"] {
+    width: 100%;
     border: none;
     text-align: center;
-    height: 30px;
-    margin: 10px 0;
-    font-weight: bold;
-    font-size: 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: none;
+    color: #fff;
+    min-height: 20px; }
+  .card-content ::-webkit-input-placeholder {
     color: #fff; }
+  .card-content ::-moz-input-placeholder {
+    color: #fff; }
+  .card-content ::-ms-input-placeholder {
+    color: #fff; }
+  .card-content :-moz-input-placeholder {
+    color: #fff; }
+  .card-content .name {
+    height: 30px;
+    margin: 10px 0;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase; }
   .card-content .title {
-    font-size: 13px;
+    font-size: 14px;
     border-bottom: 2px solid #ddd;
     border-top: 2px solid #ddd;
     padding: 2px 12px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-style: italic; }
   .card-content .company {
     font-weight: bold; }
   .card-content .phone, .card-content .email, .card-content .address {
-    font-size: 12px;
+    font-size: 13px;
     font-style: italic;
-    line-height: 1.2; }
+    line-height: 1.2;
+    border: none;
+    color: #fff; }
 
 .select-pattern {
   position: absolute;
@@ -673,5 +688,17 @@ button:focus {
   font-weight: bold;
   font-style: italic;
   font-size: 18px; }
+
+.pattern-item .color, .pattern-item img {
+  height: 80px; }
+  @media screen and (min-width: 768px) {
+    .pattern-item .color, .pattern-item img {
+      height: 110px; } }
+.pattern-item .red {
+  background: red; }
+.pattern-item .green {
+  background: green; }
+.pattern-item .yellow {
+  background: yellow; }
 
 /*# sourceMappingURL=style.css.map */
