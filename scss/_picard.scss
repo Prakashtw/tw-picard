@@ -76,8 +76,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background: rgba(0,0,0,0.2);
-		padding: 15px;
+		padding: 15px 15px 10px;
 		color: #fff;
 	
 		.logo {
@@ -92,22 +91,9 @@
 			-moz-appearance: none;
 			appearance: none;
 			background: none;
-			color: #fff;
-			min-height: 20px;
+			min-height: 16px;
 		}
 		
-		::-webkit-input-placeholder {
-			color: #fff;
-		}
-		::-moz-input-placeholder {
-			color: #fff;
-		}
-		::-ms-input-placeholder {
-			color: #fff;
-		}
-		:-moz-input-placeholder {
-			color: #fff;
-		}
 		.name {
 			height: 30px;
 			margin: 10px 0;
@@ -117,11 +103,11 @@
 		}
 	
 		.title {
-			font-size: 14px;
+			font-size: 13px;
 			border-bottom: 2px solid #ddd;
 			border-top: 2px solid #ddd;
 			padding: 2px 12px;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 			font-style: italic;
 		}
 		
@@ -130,11 +116,10 @@
 		}
 	
 		.phone, .email,.address {
-			font-size: 13px;
+			font-size: 11px;
 			font-style: italic;
-			line-height: 1.2;
+			line-height: 1.3;
 			border:none;
-			color: #fff;
 		}	
 }
 .select-pattern {    
