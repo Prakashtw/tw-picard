@@ -795,4 +795,78 @@ button:focus {
       width: auto;
       flex-direction: row; } }
 
+.team {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+  .team .team-title {
+    font-size: 22px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+    padding: 10px; }
+  .team .team-list {
+    list-style: none;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0; }
+    .team .team-list li {
+      margin-bottom: 4%;
+      display: inline-block;
+      float: left;
+      width: 100%; }
+      @media screen and (min-width: 667px) {
+        .team .team-list li {
+          width: 50%;
+          margin-bottom: 5%; } }
+      @media screen and (min-width: 950px) {
+        .team .team-list li {
+          width: 33%;
+          margin-bottom: 3%; } }
+
+.member {
+  position: relative;
+  background: #fff;
+  max-width: 300px;
+  height: 177px;
+  margin: 0 auto; }
+  .member .member-img {
+    width: 100%;
+    height: 177px; }
+  .member:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    background: rgba(54, 99, 189, 0.7); }
+  .member .member-info {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff; }
+    .member .member-info .logo {
+      text-align: center; }
+      .member .member-info .logo img {
+        width: 40%; }
+  .member h4 {
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 2px 0px 2px #616060;
+    margin: 0; }
+  .member h5 {
+    font-size: 12px;
+    font-weight: 400;
+    text-shadow: 2px 0px 2px #616060;
+    text-transform: uppercase;
+    margin: 10px 0; }
+
 /*# sourceMappingURL=style.css.map */
