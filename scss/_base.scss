@@ -51,6 +51,21 @@ a:focus {
 button:focus {
 	outline: none;
 }
+.item-center {
+	text-align: center;
+	padding: 20px;
+}
+.btn {
+	color: $color_secondary;
+	border: 0;
+	background: $color_link;
+	padding: 10px 20px;
+	border-radius: 4px;
+	
+	&:hover {
+		opacity: 0.8;
+	}
+}
 
 /* Sidebar */
 .sidebar {

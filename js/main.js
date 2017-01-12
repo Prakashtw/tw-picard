@@ -236,3 +236,9 @@ $('.carousel-nav__next').click(function() {
     carousel.trigger('next.owl.carousel', [600]);
 });
 
+$('#preview').click(function(){
+	$('.modal').fadeIn();
+});
+$('.modal-close').click(function(){
+	$('.modal').fadeOut();
+});

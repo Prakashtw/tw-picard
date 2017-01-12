@@ -105,11 +105,14 @@
 									<div class="card-design__front">
 										<img class="img-responsive" src="assets/images/sample1.png">
 										<div class="card-content">
-											<div class="company">thoughtworks.com</div>
 											<div class="address">ACR Mansion 147/F, 8th Main, 3rd Block, Koramangala, Bengaluru, Karnataka 560034</div>
+											<div class="company">thoughtworks.com</div>
 										</div>
 									</div>
 								</div>
+							</div>
+							<div class="item-center">
+								<button class="btn" id="preview">Confirm and preview</button>
 							</div>
 						</article>
 
@@ -144,6 +147,51 @@
 					</div>
 					<button class="close-button"><i class="fa fa-chevron-left" aria-hidden="true"></i> <span>Back</span></button>
 					<label class="select-pattern">Select Pattern</label>
+					
+					<!-- modal box for preview -->
+					<div class="modal">
+						<div class="modal-inner">
+							<div class="modal-header">Card Preview</div>
+							<div class="modal-body">
+								<div class="card-preview">
+									<div class="card-design__front">
+										<div class="card-content">
+											<img class="logo" src="img/tw-logo.svg">
+											<label class="name">John Smith</label>
+											<label class="title">Your job title</label>
+											<label class="phone">+91 81234234</label>
+											<label class="email">john@thoughtworks.com</label>
+										</div>		
+									</div>
+
+									<div class="card-design__front">
+										<img class="img-responsive" src="assets/images/sample1.png">
+										<div class="card-content">
+											<div class="address">ACR Mansion 147/F, 8th Main, 3rd Block, Koramangala, Bengaluru, Karnataka 560034</div>
+											<div class="company">thoughtworks.com</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<span>Wow it looks Awesome!!!</span> I would like to order a pack of 
+									<select>
+										<option>100</option>
+										<option>200</option>
+									</select> business cards and please deliver it to
+									<select>
+											<option>Bangalore, India</option>
+											<option>Pune, India</option> 
+										</select> ThoughtWorks Office.
+								</div>
+								
+								<div class="action-wrap">
+									<button class="btn modal-close">Cancel</button>
+									<button class="btn modal-close">Confirm order</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of modal box for preview -->
 				</section>
 			</div>
 		</div><!-- /container -->

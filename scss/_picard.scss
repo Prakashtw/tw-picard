@@ -55,15 +55,16 @@
 
 .card-design__front {
 	width: 100%;
-	height: 189px;
+	height: 190px;
 	max-width: 330px;
 	margin: 5% auto;
 	text-align: center;
 	border: 1px solid $color_gray;
 	position: relative;
+	background: #fff;
 	
 	.img-responsive {
-		height: 189px;
+		height: 188px;
 	}
 }
 	
@@ -77,7 +78,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 15px 15px 10px;
-		color: #fff;
 	
 		.logo {
 			width: 36%;
@@ -113,7 +113,12 @@
 		
 		.company {
 			font-weight: bold;
+			color: #fff;
 		}
+		.address {
+			color: #fff;
+		}
+		
 	
 		.phone, .email,.address {
 			font-size: 11px;
@@ -156,3 +161,4 @@
 		background: yellow;
 	}
 }
+
